@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/formValidation.js" defer></script>
+    <link rel="icon" href="images/icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Petit Formal Script"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Eagle Lake"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div class="image-container">
+        <h1 class="centered">Book Your Dream Vacation</h1>
+        <img src="images/beach.jpg" alt="image of a beach" />
+      </div>
+      <main class="main-container">
+        <form id="destination-form" action="submit-order" method="post">
+          <!-- <form id="destination-form" action="#" method="get"> -->
+          <div class="destination-container">
+            <div class="destination-title">
+              <label for="destination">Destination</label>
+              <span id="err-destination" class="error"
+                >Please select a destination.</span
+              >
+            </div>
+            <br />
+            <select name="destination" id="destination">
+              <option value="">Choose a destination...</option>
+              <option value="tokyo">Tokyo, Japan</option>
+              <option value="manila">Manila, Phillipines</option>
+              <option value="seoul">Seoul, South Korea</option>
+              <option value="paris">Paris, France</option>
+              <option value="london">London, England</option>
+            </select>
+          </div>
+          <div class="flex-container">
+            <div class="flex-item1">
+              <label for="departure-date">Departure Date</label>
+              <input type="date" id="destination-date" />
+            </div>
+            <div class="flex-item2">
+              <div class="inline">
+                <label for="travelers">Number of Travelers </label>
+                <span id="err-travelers" class="error">
+                  Must be greater than 0.</span
+                >
+              </div>
+              <input type="number" id="travelers" placeholder="0" />
+            </div>
+          </div>
+          <div class="myButton">
+            <button id="button" type="submit">Find My Vacation</button>
+          </div>
+        </form>
+      </main>
+    </div>
+    <footer>
+      <p>GitHub Repository:</p>
+      <a href=""></a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+body {
+  background: #2da5ad;
+  font-family: sans-serif;
+  background: linear-gradient(
+    180deg,
+    rgba(45, 165, 173, 1) 1%,
+    rgba(45, 186, 196, 1) 3%,
+    rgba(38, 198, 209, 1) 6%,
+    rgba(120, 219, 222, 1) 35%,
+    rgba(188, 235, 245, 1) 56%,
+    rgba(220, 245, 245, 1) 68%,
+    rgba(235, 247, 244, 1) 73%,
+    rgba(243, 252, 242, 1) 78%,
+    rgba(199, 235, 224, 1) 84%,
+    rgba(180, 226, 214, 1) 94%,
+    rgba(142, 212, 205, 1) 97%,
+    rgba(89, 181, 166, 1) 100%
+  );
+  height: 100vh;
+}
+
+.main-container {
+  padding-bottom: 2rem;
+}
+
+.card {
+  width: 100%;
+  margin: 0 auto;
+  background: #dbdbdb;
+  background: linear-gradient(
+    180deg,
+    rgba(219, 219, 219, 1) 0%,
+    rgba(255, 255, 255, 1) 8%,
+    rgba(250, 250, 250, 1) 77%,
+    rgba(222, 222, 222, 1) 91%,
+    rgba(171, 171, 171, 1) 99%
+  );
+  border-radius: 15px;
+}
+
+@media (min-width: 960px) {
+  .card {
+    width: 50%;
+  }
+}
+.image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  font-family: "Petit Formal Script";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  white-space: nowrap;
+  font-size: 2.5vw;
+}
+
+img {
+  max-width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  filter: brightness(50%);
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+}
+
+.destination-container {
+  margin: 2rem;
+}
+
+.destination-title {
+  display: flex;
+  gap: 5px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+  gap: 1rem;
+}
+
+.flex-item1,
+.flex-item2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+input[type="date"],
+input[type="number"] {
+  padding: 12px;
+}
+
+.myButton {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 5px 30px;
+  border-radius: 25px;
+  font-size: large;
+  color: white;
+  font-family: "Eagle Lake";
+  background-color: rgba(38, 198, 209, 1);
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
+}
+
+.error {
+  color: red;
+  display: none;
+}
