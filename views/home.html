@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Vacation Booking</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/formValidation.js" defer></script>
     <link rel="icon" href="images/icon.png" />
@@ -18,13 +18,12 @@
   </head>
   <body>
     <div class="card">
-      <div class="image-container">
+      <header class="image-container">
         <h1 class="centered">Book Your Dream Vacation</h1>
         <img src="images/beach.jpg" alt="image of a beach" />
-      </div>
+      </header>
       <main class="main-container">
         <form id="destination-form" action="submit-order" method="post">
-          <!-- <form id="destination-form" action="#" method="get"> -->
           <div class="destination-container">
             <div class="destination-title">
               <label for="destination">Destination</label>
@@ -44,8 +43,8 @@
           </div>
           <div class="flex-container">
             <div class="flex-item1">
-              <label for="departure-date">Departure Date</label>
-              <input type="date" id="destination-date" />
+              <label for="departureDate">Departure Date</label>
+              <input type="date" id="departureDate" />
             </div>
             <div class="flex-item2">
               <div class="inline">
@@ -65,7 +64,9 @@
     </div>
     <footer>
       <p>GitHub Repository:</p>
-      <a href=""></a>
+      <a href="https://github.com/leoraggy/vacation" target="_blank"
+        >https://github.com/leoraggy/vacation</a
+      >
     </footer>
   </body>
 </html>
