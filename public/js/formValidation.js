@@ -5,7 +5,7 @@ document.getElementById("destination-form").onsubmit = () => {
 
   let dropdown = document.getElementById("destination");
   let destination = dropdown.options[dropdown.selectedIndex].value;
-  let date = document.getElementById("destinationDate").value;
+  let date = document.getElementById("departureDate").value;
   let numberOfTravelers = document.getElementById("travelers").value;
 
   if (!destination) {
